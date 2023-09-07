@@ -33,7 +33,7 @@ jobs:
       - name: Build docs
         run: |
           cd ozone/hadoop-hdds/docs
-          mvn clean package
+          mvn --no-transfer-progress clean package
       - name: Store generated docs
         run: |
           rm -fr site/docs/edge
