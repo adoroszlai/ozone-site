@@ -47,7 +47,7 @@ jobs:
         run: |
           cd ozone
           OZONE_SHA=$(git rev-parse HEAD)
-          cd site
+          cd ../site
           git config --global user.name 'Github Actions'
           git config --global user.email 'noreply@github.com'
           git commit -m "[auto] Generated docs from Apache Ozone master $OZONE_SHA" || true
