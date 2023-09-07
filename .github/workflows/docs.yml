@@ -16,6 +16,7 @@ name: docs
 on:
   schedule:
     - cron: '12 12 * * *'
+  workflow_dispatch:
 jobs:
   regenerate:
     runs-on: ubuntu-latest
