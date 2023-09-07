@@ -13,9 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 on:
-  push:
-  #  schedule:
-  #  - cron: 55 5 * * *
+  schedule:
+    - cron: 50 * * * *
 jobs:
   regenerate:
     runs-on: ubuntu-latest
@@ -46,4 +45,4 @@ jobs:
           git config --global user.name 'Github Actions'
           git config --global user.email 'noreply@github.com'
           git commit -m "[auto] Generated docs from Apache Ozone master $OZONE_SHA" || true
-          # git push
+          git push
