@@ -54,6 +54,11 @@ jobs:
     steps:
     - name: Checkout project
       uses: actions/checkout@v4
+    - name: Install Corepack
+      # see https://github.com/actions/setup-node/issues/1222
+      run: |
+        npm i -g --force corepack
+      shell: bash
     - name: Enable corepack
       run: |
         corepack enable
