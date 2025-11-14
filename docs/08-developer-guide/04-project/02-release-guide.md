@@ -140,6 +140,7 @@ Protolock files are used to check backwards compatibility of protocol buffers be
     :::
 
 3. Submit a pull request to add the updated `proto.lock` changes to Ozone's master branch. This commit will be the parent of your release branch.
+4. Send an announcement to the dev mailing list that developers should start using the next minor version as fix version for any future commit in `master`.
 
 ### Update the Ozone Version on the Master Branch
 
