@@ -25,7 +25,7 @@ on:
   push:
     branches-ignore:
     - automated-config-doc-update
-    - 'dependabot/**'
+    - dependabot/**
 
 concurrency:
   group: ci-${{ github.event.pull_request.number || github.sha }}

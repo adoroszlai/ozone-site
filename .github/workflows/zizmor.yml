@@ -19,7 +19,7 @@ on:
   push:
     branches-ignore:
     - automated-config-doc-update
-    - 'dependabot/**'
+    - dependabot/**
   pull_request:
 
 permissions: { }
